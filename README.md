@@ -5,9 +5,9 @@
   1. A self-adaptive version of Downhill Simplex algorithm by Nelder-Mead (abbreviated "NM"). This algorithm is faster than DE, and uses successive-approximation to guarantee convergence at minima. For one-dimensional problems the Brent's method is used instead.
   2. An improved version of the Differential Evolution (abbreviated "DE") algorithm, specifically DE/rand-to-pbest/1 JADE with archive. My improvements include self-adaptive optimal population size reduction and self-adaptive vector length and crossover likelihood. This algorithm is very effective at finding global minimuma. Each search starts with a polulation of good candidate points selected from a search of the whole multidimensional solution domain using a scrambled low-discrepancy Faure sequence.
 - GlobalMinimize lets you use the above two optimizers in three alternative ways.
-  (a) Nelder-Mead (NM) only. This is the fastest alternative. This guarantees to find the global minimum for solution domains that are smoothe and are unimodal, but also works very well in solution domains with discontinuous gradient.
-  (b) Differential-Evolution (DE) followed by Nelder-Mean (NM). This should be your default option, as it increases the likehood of finding the global minimum, and NM 'polishes off' the optimum with a high degree of accuracy.
-  (c) Indefinite repetitions of DE. This option is a Monte Carlo technique; it increases the chances of finding the global optimum for very 'noisy' solution domains with multiple local minima. You can stop the search at any time by pressing the 'stop' button, after which the NM is automatically run to 'polish off' the solution.
+  1. Nelder-Mead (NM) only. This is the fastest alternative. This guarantees to find the global minimum for solution domains that are smoothe and are unimodal, but also works very well in solution domains with discontinuous gradient.
+  2. Differential-Evolution (DE) followed by Nelder-Mean (NM). This should be your default option, as it increases the likehood of finding the global minimum, and NM 'polishes off' the optimum with a high degree of accuracy.
+  3. Indefinite repetitions of DE. This option is a Monte Carlo technique; it increases the chances of finding the global optimum for very 'noisy' solution domains with multiple local minima. You can stop the search at any time by pressing the 'stop' button, after which the NM is automatically run to 'polish off' the solution.
 
 ### License and warranty
 - Distributed free under the CC RY-ND 4.0 license.
