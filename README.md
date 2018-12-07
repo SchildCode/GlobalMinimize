@@ -8,6 +8,7 @@
   1. Nelder-Mead (NM) only. This is the fastest alternative. This guarantees to find the global minimum for solution domains that are smoothe and are unimodal, but also works very well in solution domains with discontinuous gradient.
   2. Differential-Evolution (DE) followed by Nelder-Mean (NM). This should be your default option, as it increases the likehood of finding the global minimum, and NM 'polishes off' the optimum with a high degree of accuracy.
   3. Indefinite repetitions of DE. This option is a Monte Carlo technique; it increases the chances of finding the global optimum for very 'noisy' solution domains with multiple local minima. You can stop the search at any time by pressing the 'stop' button, after which the NM is automatically run to 'polish off' the solution.
+- GlobalMinimize is a normal workbook file, not an Excel AddIn, so it does not require any installation. To use GlobalMinimize, you must have two Excel workbooks open at the same time: the GlobalMinimize workbook and your own workbook file containing the cell value that you wish to minimize.
 
 ### License and warranty
 - Distributed free under the CC RY-ND 4.0 license.
