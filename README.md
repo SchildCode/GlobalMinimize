@@ -19,5 +19,6 @@
 
 ### References
 - Buermen A., Tuma T. "Unconstrained derivative-free optimization by successive approximation". Journal of computational and applied mathematics, vol. 223, pp. 62-74, 2009
-- Faure H and Tezuka S (2000) "Another random scrambling of digital (t,s)-sequences Monte Carlo and Quasi-Monte Carlo Methods" Springer-Verlag, Berlin, Germany (eds K T Fang, F J Hickernell and H Niederreiter)
 - Zhang, Jingqiao, and Arthur C. Sanderson. "JADE: adaptive differential evolution with optional external archive." IEEE Transactions on evolutionary computation 13.5 (2009): 945-958.
+- Faure H and Tezuka S (2000) "Another random scrambling of digital (t,s)-sequences Monte Carlo and Quasi-Monte Carlo Methods" Springer-Verlag, Berlin, Germany (eds K T Fang, F J Hickernell and H Niederreiter)
+
