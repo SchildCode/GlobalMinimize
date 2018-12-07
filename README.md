@@ -11,7 +11,7 @@
 - GlobalMinimize is a normal workbook file, not an Excel AddIn, so it does not require any installation. To use GlobalMinimize, you must have two Excel workbooks open at the same time: the GlobalMinimize workbook and your own workbook file containing the cell value that you wish to minimize.
 
 ### License and warranty
-- Distributed free under the CC RY-ND 4.0 license.
+- Distributed free under the CC BY-ND 4.0 license.
 - Provided with no warranty of any kind.
 
 ### Author and copyright
