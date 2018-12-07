@@ -1,6 +1,6 @@
 # GlobalMinimize
 ### Features
-- A Microsoft Excel macro with state-of-the art optimization algorithms that outperform the Excel Solver AddIn when the solution domain contains multiple local minima or regions with constant cost (no gradient). 
+- A Microsoft Excel macro with state-of-the art multi-parameter optimization algorithms that outperform the Excel Solver AddIn when the solution domain contains multiple local minima, discontinuous gradient, or regions with constant cost (no gradient). 
 - The application contains improved versions of the following two optimizers: 
   1. A self-adaptive version of Downhill Simplex algorithm by Nelder-Mead (abbreviated "NM"). This algorithm is faster than DE, and uses successive-approximation to guarantee convergence at minima. For one-dimensional problems the Brent's method is used instead.
   2. An improved version of the Differential Evolution (abbreviated "DE") algorithm, specifically DE/rand-to-pbest/1 JADE with archive. My improvements include self-adaptive optimal population size reduction and self-adaptive vector length and crossover likelihood. This algorithm is very effective at finding global minimuma. Each search starts with a polulation of good candidate points selected from a search of the whole multidimensional solution domain using a scrambled low-discrepancy Faure sequence.
