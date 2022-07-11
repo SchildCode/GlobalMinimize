@@ -17,12 +17,13 @@
 - The dialogue-box input field between the min & max bounds is for you to specify the "independent variables" with that bound. It has a button that you can click-on to select one or more cells. They can be disjoint cells and/or ranges; select multiple disjoint cells or ranges by clicking on them while pressing the CTRL key.
 - GlobalMinimize will change the values in these "independent value" cells in order to minimize the calculated value calculated in the formula in the "objective function" cell. Thus, these "independent variable" cells in your sheet cannot contain formulae, but must instead contain a number.
 
-### Note on using workbooks with multiple sheets
+### Note on using workbooks with multiple sheets or complex problems
 - GlobalMinimize remembers the settings (i.e. all the cell addresses in the dialogue-box) so that it can recall them each time you run GlobalMimimize. The settings are saved for each worksheet in the workbook file. Each worksheet has its own GlobalMinimize settings, such that they can be recalled even when you change the sheet name, or duplicate the sheet. A consequence of this is that all the cell references that you specify in the GlobalMinimize dialogue-box must be on the present active sheet (you get a warning if you try to select cells in another sheet).
 - Even though the GlobalMinimize dialogue-box permits only cell references on the present active sheet, you can still use GlobalMinimize for complex optimization tasks that encompass multiple sheets (or even multiple workbooks). Simply choose one sheet as your “main” sheet, which you view whenever you run GlobalOptimize, e.g. Sheet1. Then run GlobalOptimize only when you view Sheet1, and in the GlobalOptimize dialogue-box select cells in only on Sheet1. However the formula in the "objective function" cell in Sheet1 can reference cells in the other sheets in your workbook (or other open workbooks), and the cells in the other sheets can reference the “independent variables” cells in Sheet1.
+- GlobalMinimize should also work with your own macros. Your objetive function can be a formula with User Defined Function that you program in your own macro.
 
 ### Note on discrete vs continuous variables
-- GlobalMinimize treats all the independent variables as continuous variables, by default. However, you can cater for discrete variables (ordinate or categorical) simply by using a functions such as INT(), ROUND(), CHOOSE(), etc. This is because GlobalMinimize employs algorithms that work well for functions with a discontinuous or unknown gradient.
+- GlobalMinimize treats all the independent variables as continuous variables, by default. However, you can cater for discrete variables (ordinate or categorical) simply by using a functions such as INT(), ROUND(), CHOOSE(), etc. in your worksheet This is because GlobalMinimize employs algorithms that work well for functions with a discontinuous or unknown gradient.
 
 ### License and warranty
 - Distributed free under the CC BY-ND 4.0 license.
