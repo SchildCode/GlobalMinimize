@@ -25,6 +25,9 @@
 ### Note on discrete vs continuous variables
 - GlobalMinimize treats all the independent variables as continuous variables, by default. However, you can cater for discrete variables (ordinate or categorical) simply by using a functions such as INT(), ROUND(), CHOOSE(), etc. in your worksheet This is because GlobalMinimize employs algorithms that work well for functions with a discontinuous or unknown gradient.
 
+### How to automate GlobalMimimize via VBA
+- It is now possible to fully automate GlobalMinimize with VBA to solve your own user functions. Contact Peter.Schild@OsloMet.no for details and example-code.
+
 ### License and warranty
 - Distributed free under the CC BY-ND 4.0 license.
 - Provided with no warranty of any kind.
